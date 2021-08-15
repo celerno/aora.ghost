@@ -21,6 +21,11 @@ section{
     flex-wrap: wrap;
     align-items: center;    
 }
+@media (max-width:736px) {
+    .servicios{
+        align-content: center;
+    }
+}
 section > div > img{
     margin-bottom: 2rem;
 }
