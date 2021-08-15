@@ -1,0 +1,39 @@
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    padding: 0 15px;
+    height: 50px;
+    outline: none;
+    border: 1px solid var(--mid-gray-color);
+    font-size: 16px;
+    border-radius: 5px;
+    appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: var(--primary-color);
+}
+form{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact > input::placeholder{
+    color:black;
+}
+.contact > input{
+    background-color: inherit;
+    border-width: 0px;
+    text-decoration: underline;
+}
