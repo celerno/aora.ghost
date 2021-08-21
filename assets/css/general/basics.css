@@ -177,3 +177,32 @@ hr::after {
     align-self: flex-start;
     text-align: left;
 }
+@media (max-width: 767px) {
+    .element-start, .element-middle, .element-end{
+        align-self: unset;
+        text-align: center;
+        text-decoration: none !important;
+        font-weight: 500 !important;
+        font-size: 18px !important;
+        letter-spacing: 0.05em;
+    }
+    input::placeholder{
+        color: #C4C4C4 !important;
+    }
+    .hide-md{
+        display: none !important;
+    }
+    .flex-row-md{
+        flex-direction: row !important;
+
+    }
+    .flex-column-md{
+        flex-direction: column !important;
+    }
+    .logo{
+        left: unset;
+        top: unset;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

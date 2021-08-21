@@ -1,41 +1,64 @@
-{{!< default}}
-<section id="home">
-    <img src="/assets/visuals/creamos.svg">
+{{!< default}} <section id="home">
+    <picture>
+        <source media="(min-width: 767px)" srcset="/assets/visuals/creamos.svg">
+        <source media="(max-width: 767px)" srcset="/assets/visuals/creamos-md.svg">
+        <img src="/assets/visuals/creamos.svg">
+    </picture>
     {{> contact}}
-</section>
-<section id="philosophy">
+    </section>
+    <section id="philosophy">
 
-</section>
-<section id="work">
-    <div class="clientes">
-        <img src="/assets/visuals/work-clientes.svg">
-    </div>
-    <div class="servicios">
-        <img src="/assets/visuals/work-servicios.svg" />
-        <img src="/assets/visuals/work-servicios-text.svg" />
-        <table>
-            <thead>
-                <tr>
-                <th>Branding</th>
-                <th>Digital</th>
-                <th>Marketing</th>
-                <th>Editorial</th>
-                </tr>
-            </thead>
-            <tr><td colspan="4"><br></td></tr>
-                <tr>
-                    <td>Creación de Nombre <br>
-                         Diseño de Logotipo <br>
-                          Identidad Visual <br>
-                          Aplicaciones de Marca</td>
-                    <td>Estrategias de Comunicación <br>
-                        Campañas de Publicidad</td>
-                    <td>Paginas web<br>
-                    Redes Sociales<br>
-                    Google Ads<br>
-                    </td>
-                    <td>Brochures <br> Posters <br>Revistas <br> Libros</td>
-                </tr>
-        </table>
-    </div>
-</section>
+    </section>
+    <section id="work">
+        <div class="somos">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/somos-md.svg">
+                <img src="/assets/visuals/somos-md.svg" />
+            </picture>
+        </div>
+        <div class="clientes">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-clientes-md.svg">
+                <img src="/assets/visuals/work-clientes.svg">
+            </picture>
+        </div>
+
+        <div class="servicios">
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-md.svg">
+                <img src="/assets/visuals/work-servicios.svg">
+            </picture>
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-text-md.svg">
+                <img src="/assets/visuals/work-servicios-text.svg">
+            </picture>
+            <div class="table flex-column-md">
+                <div class="column ">
+                    <span class="header">Branding</span>
+                    <span class="field">Creación de contenido</span>
+                    <span class="field">Diseño de Logotipo</span> 
+                    <span class="field">Identidad Visual</span>
+                    <span class="field">Aplicaciones de Marca</span>
+                </div>
+                <div class="column ">
+                    <span class="header">Digital</span>
+                    <span class="field">Estrategias de Comunicación</span>
+                    <span class="field">Campañas de Publicidad</span>  
+                </div>
+                <div class="column ">
+                    <span class="header">Marketing</span>
+                    <span class="field">Paginas web</span>
+                    <span class="field">Redes Sociales</span>  
+                    <span class="field">Google Ads</span>
+                </div>
+                <div class="column ">
+                    <span class="header">Editorial</span>
+                    <span class="field">Brochures</span> 
+                    <span class="field">Posters</span>
+                    <span class="field">Revistas</span>
+                    <span class="field">Libros</span>
+
+                </div>
+            </div>
+        </div>
+    </section>

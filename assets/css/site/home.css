@@ -9,7 +9,7 @@ section{
 #home > img{
     margin-bottom: 4rem;
 }
-.servicios{
+.servicios, .somos{
     padding-top: 4rem;
     padding-bottom: 6rem;
     width: 100vw;
@@ -21,35 +21,58 @@ section{
     flex-wrap: wrap;
     align-items: center;    
 }
-@media (max-width:736px) {
-    .servicios{
-        align-content: center;
-    }
-}
-section > div > img{
+
+section > div > picture{
     margin-bottom: 2rem;
 }
-table{
-    color: var(--secondary-text-color);
+.table{
+    color: var(--white-color);
     text-align: left;
-    border-collapse: collapse;
-
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
 }
-table > thead > tr{
-    border-bottom-color: var(--secondary-text-color);
-    border-bottom-style: solid;
-    border-bottom-width: thin;
+.table > span{
+    display: block;
+}
+.table > .column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.table > .column:last-child{
+    margin-right: unset;
+}
+.table > .column > .header{
+    color: var(--secondary-text-color);
     font-family: Butler;
+    border-bottom: 1px solid #cdcdcd;
+    line-height: 19px;
+    margin-top: 15px;
+    padding-bottom: 3px;
 }
-td:first-child{
-    line-height: 15px;
+.field:first-child{
+    margin-bottom: 10px;
 }
-td {
+.table > .column > .field {
     margin-right: 2em;
     min-width: 180px;
 }
 
-td:last-child{
+.field:last-child{
     margin: 0;
     min-width: unset;
+}
+@media (max-width:736px) {
+    .table .column >.header{
+        display: inline-block;
+   }
+    section{
+        align-content: center;
+    }
+    .servicios{
+        align-content: center;
+    }
 }
