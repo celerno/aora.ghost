@@ -12,7 +12,7 @@ section{
 .servicios, .somos{
     padding-top: 4rem;
     padding-bottom: 6rem;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     align-content: stretch;
     display: flex;
