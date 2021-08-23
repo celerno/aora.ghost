@@ -4,11 +4,9 @@
             <!--div class="burger hidden-lg hidden-xl"></div-->
             <!--{{> logo}}
             <div class="sep hidden-xs hidden-sm hidden-sm"></div-->
-            {{#if @site.navigation}}
-                <nav class="main-menu">
-                    {{navigation}}
-                </nav>
-            {{/if}}
+            <nav class="main-menu">
+                {{> navigation}}
+            </nav>
         </div>
         <div class="header-logo navbar-middle">
             {{> logo}}

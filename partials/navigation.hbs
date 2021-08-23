@@ -1,4 +1,13 @@
 <ul class="nav-list u-plain-list">
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}">
+        <a class="menu-item-link" href="#work">{{#is "en"}}Our Work{{else}}Nosotros{{/is}}</a>
+    </li>
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}">
+        <a class="menu-item-link" href="#clients">{{#is "en"}}Our Clients{{else}}Clientes{{/is}}</a>
+    </li>
+    <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}">
+        <a class="menu-item-link" href="#contact">{{#is "en"}}Contact{{else}}Contacto{{/is}}</a>
+    </li>
     {{#foreach navigation}}
         <li class="menu-item menu-item-{{slug}}{{#if current}} menu-item-current{{/if}}"><a class="menu-item-link"
                 href="{{url absolute="true"}}">{{label}}</a></li>
