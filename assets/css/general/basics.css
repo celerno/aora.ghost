@@ -177,6 +177,7 @@ hr::after {
     align-self: flex-start;
     text-align: left;
 }
+
 @media (max-width: 767px) {
     .element-start, .element-middle, .element-end{
         align-self: unset;

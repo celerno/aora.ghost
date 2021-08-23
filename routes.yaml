@@ -1,0 +1,11 @@
+## copiar este archivo a ../../settings/
+routes:
+  /en/: home
+collections:
+  /:
+    permalink: /{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

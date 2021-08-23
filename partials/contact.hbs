@@ -2,11 +2,11 @@
 <span>Déjanos <b>tus datos</b> y nos comunicaremos contigo</span><br>
 <span>en <b>menos de 24 hrs</b></span>
     <div class="contact flex-column-md">
-        <input class="element-start" type="text" placeholder="NOMBRE" />
+        <input class="element-start" type="text" placeholder={{#is "en"}}"NAME"{{else}}"NOMBRE"{{/is}} />
         {{>separator}}
-        <input class="element-middle" type="text" placeholder="TELÉFONO" />
+        <input class="element-middle" type="text" placeholder={{#is "en"}}"PHONE"{{else}}"TELÉFONO"{{/is}} />
         {{>separator}}
-        <input class="element-end" type="text" placeholder="CORREO" />
+        <input class="element-end" type="text" placeholder={{#is "en"}}"MAIL"{{else}}"CORREO"{{/is}} />
     </div>
 <input type="image" src="/assets/visuals/enviar.svg" name="submit"/>
 </form>

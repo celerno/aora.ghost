@@ -11,7 +11,13 @@
     height: 100px;
     width: 100%;
 }
-
+a.lang{
+    display: inline !important;
+    font-weight: normal;
+}
+.lang-active{
+    font-weight: 600 !important;
+}
 .navbar-left, .navbar-right{
     align-items: flex-end;
 }

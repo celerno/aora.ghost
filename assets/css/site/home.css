@@ -46,7 +46,7 @@ section > div > picture{
     margin-right: unset;
 }
 .table > .column > .header{
-    color: var(--secondary-text-color);
+    color: var(--white-color);
     font-family: Butler;
     border-bottom: 1px solid #cdcdcd;
     line-height: 19px;
@@ -57,6 +57,7 @@ section > div > picture{
     margin-bottom: 10px;
 }
 .table > .column > .field {
+    color: var(--secondary-text-color);
     margin-right: 2em;
     min-width: 180px;
 }
