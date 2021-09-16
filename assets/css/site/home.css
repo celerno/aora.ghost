@@ -9,11 +9,10 @@ section{
 #home > img{
     margin-bottom: 4rem;
 }
-.servicios, .somos{
+.servicios, .somos, .clientes{
     padding-top: 4rem;
     padding-bottom: 6rem;
     width: 100%;
-    background-color: black;
     align-content: stretch;
     display: flex;
     flex-direction: column;
@@ -21,7 +20,17 @@ section{
     flex-wrap: wrap;
     align-items: center;    
 }
-
+.servicios, .somos{
+    background-color: black;
+}
+p {
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
 section > div > picture{
     margin-bottom: 2rem;
 }

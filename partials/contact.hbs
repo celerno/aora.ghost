@@ -1,6 +1,11 @@
 <form>
-<span>Déjanos <b>tus datos</b> y nos comunicaremos contigo</span><br>
-<span>en <b>menos de 24 hrs</b></span>
+    {{#is "en"}}
+     <span>Please leave <b>your contact information</b> and we’ll get</span><br>
+        <span>back to you in <b>less than 24 hrs.</b></span>
+    {{else}}
+        <span>Déjanos <b>tus datos</b> y nos comunicaremos contigo</span><br>
+        <span>en <b>menos de 24 hrs.</b></span>
+    {{/is}}
     <div class="contact flex-column-md">
         <input class="element-start" type="text" placeholder={{#is "en"}}"NAME"{{else}}"NOMBRE"{{/is}} />
         {{>separator}}
@@ -8,5 +13,9 @@
         {{>separator}}
         <input class="element-end" type="text" placeholder={{#is "en"}}"MAIL"{{else}}"CORREO"{{/is}} />
     </div>
-<input type="image" src="/assets/visuals/enviar.svg" name="submit"/>
+    {{#is "en"}}
+        <input type="image" src="/assets/visuals/enviar-en.svg" name="submit"/>
+    {{else}}
+        <input type="image" src="/assets/visuals/enviar.svg" name="submit"/>
+    {{/is}}
 </form>

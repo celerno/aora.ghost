@@ -1,9 +1,24 @@
 {{!< default}} <section id="home">
+    {{#is "en"}}
+    <picture>
+        <source media="(min-width: 767px)" srcset="/assets/visuals/creamos-en.svg">
+        <source media="(max-width: 767px)" srcset="/assets/visuals/creamos-md-en.svg">
+        <img src="/assets/visuals/creamos-en.svg">
+    </picture>
+    {{else}}
     <picture>
         <source media="(min-width: 767px)" srcset="/assets/visuals/creamos.svg">
         <source media="(max-width: 767px)" srcset="/assets/visuals/creamos-md.svg">
         <img src="/assets/visuals/creamos.svg">
     </picture>
+    {{/is}}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     {{> contact}}
     </section>
     <section id="philosophy">
@@ -11,52 +26,108 @@
     </section>
     <section id="work">
         <div class="somos">
+            {{#is "en"}}
             <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/somos-md.svg">
-                <img src="/assets/visuals/somos-md.svg" />
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-somos-text-md-en.svg">
+                <img src="/assets/visuals/work-somos-text-en.svg" />
             </picture>
+            {{else}}
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-somos-text-md.svg">
+                <img src="/assets/visuals/work-somos-text.svg" />
+            </picture>
+            {{/is}}
         </div>
         <div class="clientes">
+            {{#is "en"}}
             <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-clientes-md.svg">
-                <img src="/assets/visuals/work-clientes.svg">
+                <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-en-md.svg">
+                <img src="/assets/visuals/ourwork-en.svg">
             </picture>
+            {{>separator-title}}
+            <p>
+                Our creative team translates ideas into tangible results with high standards of value and quality in
+                design.
+                <br>
+                Each project is a new opportunity to create timeless, relevant, and functional solutions.
+            </p>
+            {{else}}
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-md.svg">
+                <img src="/assets/visuals/ourwork.svg">
+            </picture>
+            {{>separator-title}}
+            <p>
+                Nuestro equipo creativo traduce ideas a resultados tangibles con altos estándares de valor y calidad
+                <br>
+                en diseño. Cada proyecto es una nueva oportunidad de crear soluciones atemporales, relevantes, y
+                funcionales.
+            </p>
+            {{/is}}
+            <div class="clientes-grid">
+                <div class="clientes-row">
+                    <img src="/assets/visuals/Aréa{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Rancho el 17{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Cirene{{#is 'en'}}-en{{/is}}.png" />
+                </div>
+                <div class="clientes-row">
+                    <img src="/assets/visuals/HEDental{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Balloon Inspirations{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Vegana de Closet{{#is 'en'}}-en{{/is}}.png" />
+                </div>
+                <div class="clientes-row">
+                    <img src="/assets/visuals/Aquido{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Tégen{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Vero Orozco{{#is 'en'}}-en{{/is}}.png" />
+                </div>
+                <div class="clientes-row">
+                    <img src="/assets/visuals/El Potcast{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/Koulud{{#is 'en'}}-en{{/is}}.png" />
+                    <img src="/assets/visuals/CIRB{{#is 'en'}}-en{{/is}}.png" />
+                </div>
+            </div>
         </div>
 
         <div class="servicios">
+            {{#is "en"}}
+            <picture>
+                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-md-en.svg">
+                <img src="/assets/visuals/work-servicios-en.svg">
+            </picture>
+
+            {{else}}
             <picture>
                 <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-md.svg">
                 <img src="/assets/visuals/work-servicios.svg">
             </picture>
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-text-md.svg">
-                <img src="/assets/visuals/work-servicios-text.svg">
-            </picture>
+            {{/is}}
             <div class="table flex-column-md">
                 <div class="column ">
-                    <span class="header">Branding</span>
-                    <span class="field">Creación de contenido</span>
-                    <span class="field">Diseño de Logotipo</span> 
-                    <span class="field">Identidad Visual</span>
-                    <span class="field">Aplicaciones de Marca</span>
+                    <span class="header">{{#is "en"}}Branding{{else}}Branding{{/is}}</span>
+                    <span class="field">{{#is "en"}}Naming{{else}}Creación de Nombre{{/is}}</span>
+                    <span class="field">{{#is "en"}}Logotype Design{{else}}Diseño de Logotipo{{/is}}</span>
+                    <span class="field">{{#is "en"}}Visual Identity{{else}}Identidad Visual{{/is}}</span>
+                    <span class="field">{{#is "en"}}Brand applications{{else}}Aplicaciones de Marca{{/is}}</span>
                 </div>
                 <div class="column ">
-                    <span class="header">Digital</span>
-                    <span class="field">Estrategias de Comunicación</span>
-                    <span class="field">Campañas de Publicidad</span>  
+                    <span class="header">{{#is "en"}}Marketing{{else}}Digital{{/is}}</span>
+                    <span class="field">{{#is "en"}}Web Design{{else}}Paginas web{{/is}}</span>
+                    <span class="field">{{#is "en"}}Social Media{{else}}Redes Sociales{{/is}}</span>
+                    <span class="field">{{#is "en"}}Google Ads{{else}}Google Ads{{/is}}</span>
                 </div>
                 <div class="column ">
-                    <span class="header">Marketing</span>
-                    <span class="field">Paginas web</span>
-                    <span class="field">Redes Sociales</span>  
-                    <span class="field">Google Ads</span>
+                    <span class="header">{{#is "en"}}Marketing{{else}}Marketing{{/is}}</span>
+                    <span class="field">{{#is "en"}}Communication Strategies{{else}}Estrategias de
+                        Comunicación{{/is}}</span>
+                    <span class="field">{{#is "en"}}Advertising Campaigns{{else}}Campañas de Publicidad{{/is}}</span>
                 </div>
+
                 <div class="column ">
-                    <span class="header">Editorial</span>
-                    <span class="field">Brochures</span> 
-                    <span class="field">Posters</span>
-                    <span class="field">Revistas</span>
-                    <span class="field">Libros</span>
+                    <span class="header">{{#is "en"}}Editorial{{else}}Editorial{{/is}}</span>
+                    <span class="field">{{#is "en"}}Brochures{{else}}Brochures{{/is}}</span>
+                    <span class="field">{{#is "en"}}Posters{{else}}Posters{{/is}}</span>
+                    <span class="field">{{#is "en"}}Magazines{{else}}Revistas{{/is}}</span>
+                    <span class="field">{{#is "en"}}Books{{else}}Libros{{/is}}</span>
 
                 </div>
             </div>
