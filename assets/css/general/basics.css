@@ -154,6 +154,7 @@ hr.separator-title {
     display: flex;
     flex-direction: row;
 }
+
 /*
 hr::before,
 hr::after {
@@ -212,5 +213,9 @@ hr::after {
         top: unset;
         flex-direction: column !important;
         align-items: flex-start;
+    }
+    .clientes-row{
+        flex-direction: column !important;
+        align-items: center;
     }
 }
