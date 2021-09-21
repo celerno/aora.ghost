@@ -1,4 +1,4 @@
-input[type="text"],
+/*input[type="text"],
 input[type="password"],
 input[type="email"] {
     padding: 0 15px;
@@ -14,7 +14,7 @@ input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
     border-color: var(--primary-color);
-}
+}*/
 form{
     display: flex;
 	flex-direction: column;
@@ -23,17 +23,12 @@ form{
 	align-items: center;
 	align-content: stretch;
 }
+form span{
+    text-align: center;
+}
 .contact {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.contact > input::placeholder{
-    color:black;
-}
-.contact > input{
-    background-color: inherit;
-    border-width: 0px;
-    text-decoration: underline;
 }

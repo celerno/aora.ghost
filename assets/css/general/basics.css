@@ -186,13 +186,35 @@ hr::after {
     text-align: left;
 }
 
+
+input::placeholder{
+    color:black;
+}
+input{
+    background-color: inherit;
+    border-width: 0px;
+    text-decoration: underline;
+}
+br.break{
+    display: block;
+}
+br.break-md{
+    display: inline;
+}
+
 @media (max-width: 767px) {
+    br.break-md{
+     display: block;
+    }    
+    br.break{
+        display: inline;
+    }
     .element-start, .element-middle, .element-end{
         align-self: unset;
         text-align: center;
         text-decoration: none !important;
         font-weight: 500 !important;
-        font-size: 18px !important;
+        /*font-size: 18px !important;*/
         letter-spacing: 0.05em;
     }
     input::placeholder{

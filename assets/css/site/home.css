@@ -11,7 +11,6 @@ section{
 }
 .servicios, .somos, .clientes{
     padding-top: 4rem;
-    padding-bottom: 6rem;
     width: 100%;
     align-content: stretch;
     display: flex;
@@ -20,8 +19,21 @@ section{
     flex-wrap: wrap;
     align-items: center;    
 }
+#home,.servicios{
+    padding-bottom: 6rem;
+
+}
 .servicios, .somos{
     background-color: black;
+}
+.somos-footer{
+    background-color: #EBEBEB;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
 p {
     font-family: var(--font-mono);
@@ -85,4 +97,5 @@ section > div > picture{
     .servicios{
         align-content: center;
     }
+
 }

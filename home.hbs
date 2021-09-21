@@ -25,19 +25,7 @@
 
     </section>
     <section id="work">
-        <div class="somos">
-            {{#is "en"}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-somos-text-md-en.svg">
-                <img src="/assets/visuals/work-somos-text-en.svg" />
-            </picture>
-            {{else}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-somos-text-md.svg">
-                <img src="/assets/visuals/work-somos-text.svg" />
-            </picture>
-            {{/is}}
-        </div>
+       {{>somos}}
         <div class="clientes">
             {{#is "en"}}
             <picture>
