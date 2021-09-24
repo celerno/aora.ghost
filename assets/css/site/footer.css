@@ -30,6 +30,7 @@ a{
 	justify-content: center;
 	align-items: center;
 	align-content: stretch;
+    padding-bottom: 6rem;
 }
 .separator{
     margin-left: 2rem;
@@ -45,14 +46,13 @@ a{
     font-size: 12px;
     line-height: 14px;
     letter-spacing: .05em;
-    font-weight: 500;
+    font-family: var(--font-bold);
     align-self: center;
 }
 
 .copyright a {
-    top:-6px;
-    position: relative;
     text-decoration: underline;
+    text-decoration-thickness: 2px;
 }
 
 .footer-social {
@@ -67,13 +67,11 @@ a{
 }
 
 @media (max-width: 767px) {
-    .site-footer {
+    .footer-end{
         flex-direction: column;
     }
-
-    .copyright {
-        order: 1;
-        margin-top: 15px;
+    .site-footer {
+        flex-direction: column;
     }
 
     .footer-social {

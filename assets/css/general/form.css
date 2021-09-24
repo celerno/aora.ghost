@@ -1,20 +1,4 @@
-/*input[type="text"],
-input[type="password"],
-input[type="email"] {
-    padding: 0 15px;
-    height: 50px;
-    outline: none;
-    border: 1px solid var(--mid-gray-color);
-    font-size: 16px;
-    border-radius: 5px;
-    appearance: none;
-}
 
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="email"]:focus {
-    border-color: var(--primary-color);
-}*/
 form{
     display: flex;
 	flex-direction: column;
@@ -29,6 +13,26 @@ form span{
 .contact {
     display: flex;
     flex-direction: row;
+    margin-top: 1.75rem;
     align-items: center;
     justify-content: center;
+}
+input::placeholder{
+    color:black;
+}
+input{
+    background-color: inherit;
+    font-family: var(--font-semibold);
+    border-width: 0px;
+    letter-spacing: .07rem;
+    line-height: 14.32px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+form > input[type="image"]{
+    margin-top: 1rem;
+}
+form> span{
+    font-size: 16px;
+    line-height: 24px;
 }

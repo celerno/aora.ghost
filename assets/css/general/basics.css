@@ -15,8 +15,30 @@
     --dark-mode-border-color: #495061;
     --animation-base: ease-in-out;
     --shadow-base: 0 0 5px rgba(0, 0, 0, 0.2);
-    --font-mono: SFProDisplay-Regular,Alto, Lucida Console, sans-serif; /* stylelint-disable-line value-keyword-case */
+    --font: 'SF-Pro-Display-Regular';
+    --font-semibold: 'SF-Pro-Display-Medium';
+    --font-thin: 'SF-Pro-Display-Thin';
+    --font-bold: 'SF-Pro-Display-Bold';
+    
 }
+@font-face {
+    font-family: SF-Pro-Display-Medium;
+    src: url(/assets/fonts/SF-Pro-Display-Medium.otf);
+}
+@font-face {
+    font-family: SF-Pro-Display-Thin;
+    src: url(/assets/fonts/SF-Pro-Display-Thin.otf);
+}
+@font-face {
+    font-family: SF-Pro-Display-Regular;
+    src: url(/assets/fonts/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: SF-Pro-Display-Bold;
+    src: url(/assets/fonts/SF-Pro-Display-Bold.otf);
+}
+
+
 img{
     fill: var(--black-color);
 }
@@ -127,7 +149,7 @@ pre {
 }
 
 code {
-    font-family: var(--font-mono);
+    font-family: var(--font);
     font-size: 14px;
 }
 
@@ -186,28 +208,32 @@ hr::after {
     text-align: left;
 }
 
+.only-desktop{
+    display: unset;
+}
+.only-mobile{
+    display: none !important;
+}
 
-input::placeholder{
-    color:black;
-}
-input{
-    background-color: inherit;
-    border-width: 0px;
-    text-decoration: underline;
-}
 br.break{
-    display: block;
+    display: block !important;
 }
 br.break-md{
-    display: inline;
+    display: none !important;
 }
 
 @media (max-width: 767px) {
+    .only-desktop{
+        display: none !important;
+    }
+    .only-mobile{
+        display: unset !important;
+    }
     br.break-md{
-     display: block;
+     display: block !important;
     }    
     br.break{
-        display: inline;
+        display: none !important;
     }
     .element-start, .element-middle, .element-end{
         align-self: unset;
