@@ -1,0 +1,15 @@
+<style>
+.contact_call{
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+</style>
+<div class="contact_call">
+    <input type="tel" placeholder={{#is "en" }}"PHONE"{{else}}"TELÉFONO"{{/is}}>
+{{separator-line}}
+    <input type="image" src={{#is "en"}}"/assets/visuals/recibir-llamada-en.svg"
+                            {{else}}"/assets/visuals/recibir-llamada.svg"{{/is}} />
+</div>
