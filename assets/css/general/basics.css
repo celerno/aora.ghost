@@ -265,6 +265,7 @@ br.break-md{
         align-items: flex-start;
     }
     .clientes-row{
+        padding: 0 .5rem;
         flex-direction: column !important;
         align-items: center;
     }
