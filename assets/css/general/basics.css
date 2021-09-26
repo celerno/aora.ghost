@@ -17,25 +17,23 @@
     --shadow-base: 0 0 5px rgba(0, 0, 0, 0.2);
     --font: 'SF-Pro-Display-Regular';
     --font-semibold: 'SF-Pro-Display-Medium';
-    --font-thin: 'SF-Pro-Display-Thin';
     --font-bold: 'SF-Pro-Display-Bold';
     
 }
 @font-face {
+    font-family: SF-Pro-Display-Regular, sans-serif;
+    src: url(http://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98773,98770);
+    font-weight: 400;
+}
+@font-face {
     font-family: SF-Pro-Display-Medium;
-    src: url(/assets/fonts/SF-Pro-Display-Medium.otf);
-}
-@font-face {
-    font-family: SF-Pro-Display-Thin;
-    src: url(/assets/fonts/SF-Pro-Display-Thin.otf);
-}
-@font-face {
-    font-family: SF-Pro-Display-Regular;
-    src: url(/assets/fonts/SF-Pro-Display-Regular.otf);
+    src: url(http://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98773,98770);
+    font-weight: 500;
 }
 @font-face {
     font-family: SF-Pro-Display-Bold;
-    src: url(/assets/fonts/SF-Pro-Display-Bold.otf);
+    src: url(http://fonts.cdnfonts.com/css/sf-pro-display?styles=98774,98773,98770);
+    font-weight: 700;
 }
 
 
