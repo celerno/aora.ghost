@@ -17,9 +17,7 @@ form span{
     align-items: center;
     justify-content: center;
 }
-input::placeholder{
-    color:black;
-}
+
 input{
     background-color: inherit;
     font-family: var(--font-semibold);

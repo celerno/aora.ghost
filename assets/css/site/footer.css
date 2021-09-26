@@ -43,18 +43,22 @@ a{
 }
 
 .copyright {
-    font-size: 12px;
     line-height: 14px;
     letter-spacing: .05em;
-    font-family: var(--font-bold);
+    font-family: var(--font);
     align-self: center;
 }
 
 .copyright a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
-}
 
+}
+.mail-contact{
+    word-break: keep-all;
+    font-family: var(--font);
+
+}
 .footer-social {
     margin-right: -7px;
     text-align: right;

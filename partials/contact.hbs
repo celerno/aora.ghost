@@ -1,11 +1,15 @@
 <form action="https://formspree.io/f/myylooeq" method="POST">
     {{#is "en"}}
-    <span>Please leave <b>your contact <br class="break">information</b> and we’ll get<br class="break"> back<br
-            class="break-md" />to you in <b>less than 24 hrs.</b></span>
+    <span>
+        Please leave your <b>contact information</b> <br/>
+        and we’ll get back to you<br />
+         in less than 24 hrs.</span>
     {{else}}
-    <span>Déjanos <b>tus datos</b> y nos <br class="break-md" /> comunicaremos contigo
-        <br class="break">
-        en <b>menos de 24 hrs.</b></span>
+    <span>
+        <b>Déjanos tus datos</b> y <br/> nos comunicaremos contigo
+        <br />
+        en menos de 24 hrs.
+    </span>
     {{/is}}
     <div class="contact flex-column-md">
         <div> <input class="element-start" type="text" placeholder={{#is "en" }}"NAME"{{else}}"NOMBRE"{{/is}} />
