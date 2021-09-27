@@ -3227,6 +3227,11 @@ isstream@~0.1.2:
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
+jquery-serializejson@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/jquery-serializejson/-/jquery-serializejson-3.2.1.tgz#2d1b701695bf192f6e92cdf6b22db5a3177ea045"
+  integrity sha512-89UxVNC4ac9XC5tWPz3DjSTYFcT5z6JYsxGVw+qHhD61FzjbEzXJHjpdLnezWujjqtIECi/URQ6KdPmDE9imGA==
+
 js-beautify@^1.13.11:
   version "1.14.0"
   resolved "https://registry.yarnpkg.com/js-beautify/-/js-beautify-1.14.0.tgz#2ce790c555d53ce1e3d7363227acf5dc69024c2d"
