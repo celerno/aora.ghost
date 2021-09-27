@@ -23,12 +23,12 @@
         <div> <input id= "contact-mail" class="element-end" name="_replyto" type="email" placeholder={{#is "en"
                 }}"MAIL"{{else}}"CORREO"{{/is}} />
         </div>
-        <input type="hidden" name="message" />
+        <input id="contact-message" type="hidden" name="message" />
     </div>
     {{#is "en"}}
-    <input id="contact-message" type="image" src="/assets/visuals/enviar-en.svg" onclick="message();"  />
+    <input type="image" src="/assets/visuals/enviar-en.svg" onclick="message();"  />
     {{else}}
-    <input type="image" src="/assets/visuals/enviar.svg" />
+    <input type="image" src="/assets/visuals/enviar.svg"   onclick="message();" />
     {{/is}}
 </form>
 <script>
