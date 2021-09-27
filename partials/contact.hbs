@@ -23,7 +23,7 @@
         <div> <input id= "contact-mail" class="element-end" name="_replyto" type="email" placeholder={{#is "en"
                 }}"MAIL"{{else}}"CORREO"{{/is}} />
         </div>
-        <input type="hidden" />
+        <input type="hidden" name="message" />
     </div>
     {{#is "en"}}
     <input id="contact-message" type="image" src="/assets/visuals/enviar-en.svg" onclick="message();"  />
