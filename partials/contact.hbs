@@ -26,19 +26,21 @@
         <input id="contact-message" type="hidden" name="message" />
     </div>
     {{#is "en"}}
-    <input type="image" src="/assets/visuals/enviar-en.svg" onclick="message();"  />
+    <input type="image" src="/assets/visuals/enviar-en.svg" name="submit" />
     {{else}}
-    <input type="image" src="/assets/visuals/enviar.svg"   onclick="message();" />
+    <input type="image" src="/assets/visuals/enviar.svg"    name="submit" />
     {{/is}}
 </form>
 <script>
-    function message(){
+    let form = document.getElementById("contact-form");
+    form.addEventListener('submit', function(event){
         let msg = document.getElementById('contact-message');
         let phone = document.getElementById('contact-tel');
         let name = document.getElementById('contact-name');
         let mail = document.getElementById('contact-mail');
-        msg.value = name.value + " / " + phone.value + " / " + mail.value;
-        let form = document.getElementById("contact-form");
+        
+        form.elements['message'].value = name.value + " / " + phone.value + " / " + mail.value;
         form.submit();
-    }
+    });
+
 </script>
