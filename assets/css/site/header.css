@@ -1,7 +1,8 @@
 #cotizar{
-    top: 60px;
+    top: 30px;
     position: fixed;
-    right: 23vw;
+    right: 60px;
+    
 }
 #cotizar > div{
     display: flex;
@@ -144,5 +145,8 @@ a.lang{
 }
 
 @media (max-width: 767px) {
-
+    #cotizar{
+        top: 30px;
+        right: 10px;
+    }
 }
