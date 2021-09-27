@@ -9,14 +9,24 @@
             {{> logo}}
         </div>
         <div class="navbar-right">
-            <span>
-                <a href="/en/" class="lang {{#is "en"}}lang-active{{/is}}">EN</a>
-                &nbsp;/&nbsp;
-                <a href="/" class="lang {{^is "en"}}lang-active{{/is}}">ES</a>
+            <span style="font-size: large;">
+                {{#is "en"}}
+                <a href="/" title="sitio en español">es🗺</a>
+                {{else}}
+                <a href="/en" title="english version">en🗺</a>
+                {{/is}}
             </span>
-            <span>CORREO</span>
-            <a href="mailto:hello@aora.agency">hello@aora.agency</a>
+            <a id="cotizar" href="/cotizar" title='{{#is "en"}}"Ask for a custom solution"{{else}}"Solicitar un presupuesto personalizado"{{/is}}' >
+            <div>
+                <div>
+                    {{#is "en"}}
+                        LETS WORK
+                    {{else}}
+                        COTIZAR
+                    {{/is}}
+                </div>
+            </div>
+            </a>
         </div>
     </div>
-
 </header>

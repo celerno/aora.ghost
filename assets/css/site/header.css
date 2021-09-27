@@ -1,3 +1,43 @@
+#cotizar{
+    top: 60px;
+    position: fixed;
+    right: 23vw;
+}
+#cotizar > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/visuals/boton-outline.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 80px;
+    min-height: 25px;
+    padding: 15px 15px 20px 15px;
+}
+
+#cotizar > div > div{
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px rgb(224, 169, 217),
+    0 0 21px rgb(160, 24, 119),
+    0 0 42px rgb(241, 5, 222);
+/*    animation-name: cotizar-anim;*/
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    width: fit-content;
+}
+@keyframes cotizar-anim {
+    from{ 
+        text-shadow:rgb(255,255,255) 1px 0 20px;
+    }
+    to{
+        text-shadow:rgb(136, 25, 146) 1px 0 60px;
+    }
+    
+}
 .site-header {
     padding-top: 2rem;
     backface-visibility: hidden;
