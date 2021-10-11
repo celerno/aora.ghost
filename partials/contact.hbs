@@ -31,16 +31,3 @@
     <input type="image" src="/assets/visuals/enviar.svg"    name="submit" />
     {{/is}}
 </form>
-<script>
-    let form = document.getElementById("contact-form");
-    form.addEventListener('submit', function(event){
-        let msg = document.getElementById('contact-message');
-        let phone = document.getElementById('contact-tel');
-        let name = document.getElementById('contact-name');
-        let mail = document.getElementById('contact-mail');
-        
-        form.elements['message'].value = name.value + " / " + phone.value + " / " + mail.value;
-        form.submit();
-    });
-
-</script>

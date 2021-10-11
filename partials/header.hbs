@@ -9,24 +9,24 @@
             {{> logo}}
         </div>
         <div class="navbar-right">
-            <span style="font-size: large;">
+            
+            <div class="cotizar-btn">
                 {{#is "en"}}
-                <a href="/" title="sitio en español">es</a>
+                 <input id="cotizar" type="image" src="/assets/visuals/cotizar-en.svg" id="cotizar" href="/cotizar" title="Solutions made for you" />
                 {{else}}
-                <a href="/en" title="english version">en</a>
+                 <input id="cotizar" type="image" src="/assets/visuals/cotizar.svg" id="cotizar" href="/cotizar" title="Soluciones para ti" />
                 {{/is}}
-            </span>
-            <a id="cotizar" href="/cotizar" title='{{#is "en"}}"Ask for a custom solution"{{else}}"Solicitar un presupuesto personalizado"{{/is}}' >
-            <div>
-                <div>
-                    {{#is "en"}}
-                        LETS WORK
-                    {{else}}
-                        COTIZAR
-                    {{/is}}
-                </div>
+                
             </div>
-            </a>
+            <div> <span style="font-size: large;">
+                    {{#is "en"}}
+                    <a href="/" title="sitio en español">es</a>
+                    {{else}}
+                    <a href="/en" title="english version">en</a>
+                    {{/is}}
+                </span>
+            </div>
+            
         </div>
     </div>
 </header>

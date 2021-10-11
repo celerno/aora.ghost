@@ -1,6 +1,6 @@
 var html = $('html');
 
-$(function () {
+$(function() {
     darkMode();
     whiteLogo();
     carousel();
@@ -8,10 +8,24 @@ $(function () {
     gallery();
     author();
     offCanvas();
+    contactForm();
+    applyOnScroll();
 });
 
+function contactForm() {
+    $('#contactForm').on('submit', function(event) {
+        let msg = document.getElementById('contact-message');
+        let phone = document.getElementById('contact-tel');
+        let name = document.getElementById('contact-name');
+        let mail = document.getElementById('contact-mail');
+
+        contactForm.elements['message'].value = name.value + " / " + phone.value + " / " + mail.value;
+        contactForm.submit();
+    });
+}
+
 function darkMode() {
-    $('.toggle-track').on('click', function () {
+    $('.toggle-track').on('click', function() {
         if (html.hasClass('dark-mode')) {
             html.removeClass('dark-mode');
             localStorage.setItem('alto_dark', false);
@@ -53,10 +67,10 @@ function carousel() {
             '<i class="icon icon-chevron-left"></i>',
             '<i class="icon icon-chevron-right"></i>',
         ],
-        onInitialized: function () {
+        onInitialized: function() {
             moveNav();
         },
-        onResized: function () {
+        onResized: function() {
             moveNav();
         },
         responsive: {
@@ -80,7 +94,7 @@ function video() {
 
 function gallery() {
     var images = document.querySelectorAll('.kg-gallery-image img');
-    images.forEach(function (image) {
+    images.forEach(function(image) {
         var container = image.closest('.kg-gallery-image');
         var width = image.attributes.width.value;
         var height = image.attributes.height.value;
@@ -90,7 +104,7 @@ function gallery() {
 }
 
 function author() {
-    $('.author-name').on('click', function () {
+    $('.author-name').on('click', function() {
         $(this).next('.author-social').toggleClass('enabled');
     });
 }
@@ -104,27 +118,27 @@ function offCanvas() {
         prependTo: '.mobile-menu',
     });
 
-    burger.on('click', function () {
+    burger.on('click', function() {
         html.toggleClass('canvas-opened');
         html.addClass('canvas-visible');
         dimmer('open', 'medium');
     });
 
-    canvasClose.on('click', function () {
+    canvasClose.on('click', function() {
         if (html.hasClass('canvas-opened')) {
             html.removeClass('canvas-opened');
             dimmer('close', 'medium');
         }
     });
 
-    jQuery('.dimmer').on('click', function () {
+    jQuery('.dimmer').on('click', function() {
         if (html.hasClass('canvas-opened')) {
             html.removeClass('canvas-opened');
             dimmer('close', 'medium');
         }
     });
 
-    jQuery(document).keyup(function (e) {
+    jQuery(document).keyup(function(e) {
         if (e.keyCode == 27 && html.hasClass('canvas-opened')) {
             html.removeClass('canvas-opened');
             dimmer('close', 'medium');
@@ -145,4 +159,21 @@ function dimmer(action, speed) {
             dimmer.fadeOut(speed);
             break;
     }
+}
+
+
+
+
+
+
+function applyOnScroll() {
+    $(window).on('scroll', function(evt) {
+        var header = $('.site-header');
+
+        if ($(window).scrollTop() === 0) {
+            $(header).removeClass('header-fixed');
+        } else if ($(header).hasClass('header-fixed') === false) {
+            $(header).addClass('header-fixed');
+        }
+    });
 }

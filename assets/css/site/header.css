@@ -1,48 +1,33 @@
-#cotizar{
-    top: 30px;
-    position: fixed;
-    right: 60px;
-    
-}
-#cotizar > div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(/assets/visuals/boton-outline.svg);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    min-width: 80px;
-    min-height: 25px;
+.navbar-right>div {
     padding: 15px 15px 20px 15px;
 }
 
-#cotizar > div > div{
-    color: var(--white-color);
-    letter-spacing: .1rem;
-    text-shadow:
-    0 0 7px #fff,
-    0 0 10px rgb(224, 169, 217),
-    0 0 21px rgb(160, 24, 119),
-    0 0 42px rgb(241, 5, 222);
-/*    animation-name: cotizar-anim;*/
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    width: fit-content;
+.cotizar-btn>input {
+    min-width: 80px;
+    min-height: 25px;
 }
+
 @keyframes cotizar-anim {
-    from{ 
-        text-shadow:rgb(255,255,255) 1px 0 20px;
+    from {
+        text-shadow: rgb(255, 255, 255) 1px 0 20px;
     }
-    to{
-        text-shadow:rgb(136, 25, 146) 1px 0 60px;
+    to {
+        text-shadow: rgb(136, 25, 146) 1px 0 60px;
     }
-    
 }
+
 .site-header {
     padding-top: 2rem;
     backface-visibility: hidden;
     z-index: 80;
+}
+
+.header-fixed {
+    position: fixed;
+    padding: unset !important;
+    background: var(--white-color);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar {
@@ -52,32 +37,40 @@
     height: 100px;
     width: 100%;
 }
-a.lang{
+
+a.lang {
     display: inline !important;
     font-weight: normal;
 }
-.lang-active{
+
+.lang-active {
     font-weight: 600 !important;
 }
-.navbar-left, .navbar-right{
+
+.navbar-left,
+.navbar-right {
     align-items: flex-end;
 }
-.navbar-middle{
+
+.navbar-middle {
     align-items: center;
 }
+
 .navbar-middle,
 .navbar-left,
 .navbar-right {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: smaller;
     justify-content: space-around;
-    flex-basis: 100%;
+    align-items: center;
+    /*flex-basis: 100%;*/
 }
 
 .navbar-left {
     height: 100%;
 }
+
 .logo {
     position: relative;
     margin-right: 15px;
@@ -145,7 +138,7 @@ a.lang{
 }
 
 @media (max-width: 767px) {
-    #cotizar{
+    #cotizar {
         top: 30px;
         right: 10px;
     }
