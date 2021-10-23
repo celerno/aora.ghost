@@ -1,10 +1,24 @@
 .navbar-right>div {
-    padding: 15px 15px 20px 15px;
+    padding: calc(.7rem);
 }
 
-.cotizar-btn>input {
-    min-width: 80px;
-    min-height: 25px;
+.cotizar-btn {
+    background-color: var(--cotizar-color);
+    border-radius: calc(.5rem);
+}
+
+.cotizar-btn span {
+    font: var(--font);
+    font-size: calc(1rem);
+}
+
+.cotizar-btn span>strong {
+    font: var(--font-bold);
+}
+
+.cotizar-btn a {
+    color: var(--white-color);
+    font-weight: unset;
 }
 
 @keyframes cotizar-anim {
@@ -138,7 +152,7 @@ a.lang {
 }
 
 @media (max-width: 767px) {
-    #cotizar {
+    .cotizar-btn>input {
         top: 30px;
         right: 10px;
     }

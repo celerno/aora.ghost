@@ -9,15 +9,8 @@
             {{> logo}}
         </div>
         <div class="navbar-right">
-            
-            <div class="cotizar-btn">
-                {{#is "en"}}
-                 <input id="cotizar" type="image" src="/assets/visuals/cotizar-en.svg" id="cotizar" href="/cotizar" title="Solutions made for you" />
-                {{else}}
-                 <input id="cotizar" type="image" src="/assets/visuals/cotizar.svg" id="cotizar" href="/cotizar" title="Soluciones para ti" />
-                {{/is}}
-                
-            </div>
+
+           {{> cotizar-btn}}
             <div> <span style="font-size: large;">
                     {{#is "en"}}
                     <a href="/" title="sitio en español">es</a>
@@ -26,7 +19,7 @@
                     {{/is}}
                 </span>
             </div>
-            
+
         </div>
     </div>
 </header>
