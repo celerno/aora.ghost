@@ -1,10 +1,20 @@
-.navbar-right>div {
-    padding: calc(.7rem);
+header a {
+    font: unset;
+    font-size: unset;
+}
+
+.header-logo {
+    padding: 0 .5rem;
 }
 
 .cotizar-btn {
     background-color: var(--cotizar-color);
     border-radius: calc(.5rem);
+    padding: calc(.7rem);
+}
+
+.cotizar-btn:hover {
+    text-decoration: underline solid white 1px !important;
 }
 
 .cotizar-btn span {
@@ -18,7 +28,11 @@
 
 .cotizar-btn a {
     color: var(--white-color);
-    font-weight: unset;
+}
+
+.lang-switch {
+    font-size: calc(1rem);
+    margin: 0 .5rem;
 }
 
 @keyframes cotizar-anim {
@@ -38,8 +52,8 @@
 
 .header-fixed {
     position: fixed;
-    padding: unset !important;
-    background: var(--white-color);
+    padding: 0 2rem !important;
+    background: var(--white-color-alpha);
     left: 50%;
     transform: translateX(-50%);
 }
