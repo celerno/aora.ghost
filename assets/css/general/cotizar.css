@@ -2,10 +2,17 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    font-size: calc(14pt);
+    max-width: calc(1140px + 8vw);
+    width: 100%;
 }
 
 #cotizar-section>div {
-    margin: 2rem;
+    min-width: calc(30%);
+}
+
+#cotizar-section>div:first-child {
+    padding-right: 4rem;
 }
 
 @media (max-width: 767px) {
@@ -17,99 +24,43 @@
 
 #cotiza-form>div {
     width: 100%;
-    padding: 15px;
+    padding-top: 15px;
 }
 
-#cotiza-form>div>input {
-    width: 90%;
-    box-shadow: rgb(0 0 0 / 10%) 0px 3px;
-    font-size: 14px;
+#cotiza-form>div>input:not([type='checkbox']) {
+    width: 100%;
+    box-shadow: rgb(255 255 255 / 40%) 0px 3px;
     text-decoration: none;
+    color: var(--light-gray-color);
 }
 
-#cotiza-form>div>textarea {
-    width: 90%;
-    min-height: 60px;
-    border: none;
-    font-size: 14px;
-    letter-spacing: .04rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+#cotiza-form>div>input[name="intereses"]::placeholder {
+    color: var(--white-color);
 }
 
-#cotiza-form>div.end {
+#cotiza-form>div>input[type='checkbox'] {
+    margin-right: 4px;
+    filter: invert(60%);
+}
+
+#cotiza-form>div>input[type='checkbox']:checked {
+    filter: invert(100%);
+}
+
+#cotiza-form .end {
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
 }
 
-#cotiza-form>div>button {
-    font-family: -apple-system, sans-serif;
-    transform: translate(-50%, -50%);
-    width: 170px;
-    height: 40px;
-    line-height: 1;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    border: 3px solid dimgray;
-    background: #fff;
-    color: dimgray;
-    border-radius: 40px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all .35s;
-}
-
-#cotiza-form>div>button:hover {
-    background: #000;
-    color: #fff;
-}
-
-#cotiza-form>div>button>span {
-    opacity: 1;
-    visibility: visible;
-    transition: all .35s;
-}
-
-#cotiza-form>div>button>div {
-    position: absolute;
-    top: 0;
-    left: 0;
+#cotiza-form textarea {
+    margin-top: 5px;
     width: 100%;
-    height: 100%;
-    background: #fff;
-    border-radius: 50%;
-    z-index: 1;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .35s;
 }
 
-#cotiza-form>div>button>div>svg {
-    width: 20px;
-    height: 20px;
-    fill: yellowgreen;
-    transform-origin: 50% 50%;
-    transform: translateY(-50%) rotate(0deg) scale(0);
-    transition: all .35s;
-}
-
-#cotiza-form>div>button.is_active {
-    width: 40px;
-    height: 40px;
-}
-
-#cotiza-form>div>button.is_active>div {
-    opacity: 1;
-    visibility: visible;
-}
-
-#cotiza-form>div>button.is_active>div>svg {
-    margin-top: 50%;
-    transform: translateY(-50%) rotate(720deg) scale(1);
-}
-
-#cotiza-form>div>button.is_active span {
-    opacity: 0;
-    visibility: hidden;
+#cotiza-form button {
+    cursor: pointer;
+    transform: scale(1.5);
+    border: none;
+    background-color: inherit;
+    filter: invert(1);
 }

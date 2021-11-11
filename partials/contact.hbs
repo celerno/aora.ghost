@@ -1,4 +1,5 @@
 <form id="contact-form">
+    <input type="hidden" name="fecha" value='{{date format="YYYY-MM-DD*hh:mm:ss"}}' />
     {{#is "en"}}
     <span>
         Please leave your <b>contact information</b> <br/>
@@ -12,19 +13,20 @@
     </span>
     {{/is}}
     <div class="contact flex-column-md">
-        <div> <input id="contact-name" name="nombre" class="element-start" type="text" placeholder={{#is "en" }}"NAME"{{else}}"NOMBRE"{{/is}} />
+        <div> <input name="nombre" class="element-start" type="text" placeholder={{#is "en" }}"NAME"{{else}}"NOMBRE"{{/is}} />
         </div>
         <div> {{>separator}}
         </div>
-        <div> <input id = "contact-tel" name="phone" class="element-middle" type="tel" placeholder={{#is "en" }}"PHONE"{{else}}"TELÉFONO"{{/is}} />
+        <div> <input name="celular" class="element-middle" type="tel" placeholder={{#is "en" }}"PHONE"{{else}}"TELÉFONO"{{/is}} />
         </div>
         <div> {{>separator}}
         </div>
-        <div> <input id= "contact-mail" class="element-end" name="email" type="email" placeholder={{#is "en"
-                }}"MAIL"{{else}}"CORREO"{{/is}} />
+        <div> <input class="element-middle" name="correo" type="email" placeholder={{#is "en"}}"MAIL"{{else}}"CORREO"{{/is}} />
         </div>
-        <input type="hidden" name="empresa" />
-        <input id="contact-message" type="hidden" name="intereses" />
+        <div> {{>separator}}</div>
+        <div> <input name="empresa" class="element-end" type="text" placeholder={{#is "en" }}"COMPANY"{{else}}"EMPRESA"{{/is}} />
+        </div>
+        <input  type="hidden" name="intereses" value="NA" />
     </div>
     {{#is "en"}}
     <input type="image" src="/assets/visuals/enviar-en.svg" name="submit" />
