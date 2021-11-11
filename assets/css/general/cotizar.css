@@ -15,19 +15,19 @@
     }
 }
 
-#cotiza>div {
+#cotiza-form>div {
     width: 100%;
     padding: 15px;
 }
 
-#cotiza>div>input {
+#cotiza-form>div>input {
     width: 90%;
     box-shadow: rgb(0 0 0 / 10%) 0px 3px;
     font-size: 14px;
     text-decoration: none;
 }
 
-#cotiza>div>textarea {
+#cotiza-form>div>textarea {
     width: 90%;
     min-height: 60px;
     border: none;
@@ -36,13 +36,13 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-#cotiza>div.end {
+#cotiza-form>div.end {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-#cotiza>div>button {
+#cotiza-form>div>button {
     font-family: -apple-system, sans-serif;
     transform: translate(-50%, -50%);
     width: 170px;
@@ -60,18 +60,18 @@
     transition: all .35s;
 }
 
-#cotiza>div>button:hover {
+#cotiza-form>div>button:hover {
     background: #000;
     color: #fff;
 }
 
-#cotiza>div>button>span {
+#cotiza-form>div>button>span {
     opacity: 1;
     visibility: visible;
     transition: all .35s;
 }
 
-#cotiza>div>button>div {
+#cotiza-form>div>button>div {
     position: absolute;
     top: 0;
     left: 0;
@@ -85,7 +85,7 @@
     transition: all .35s;
 }
 
-#cotiza>div>button>div>svg {
+#cotiza-form>div>button>div>svg {
     width: 20px;
     height: 20px;
     fill: yellowgreen;
@@ -94,22 +94,22 @@
     transition: all .35s;
 }
 
-#cotiza>div>button.is_active {
+#cotiza-form>div>button.is_active {
     width: 40px;
     height: 40px;
 }
 
-#cotiza>div>button.is_active>div {
+#cotiza-form>div>button.is_active>div {
     opacity: 1;
     visibility: visible;
 }
 
-#cotiza>div>button.is_active>div>svg {
+#cotiza-form>div>button.is_active>div>svg {
     margin-top: 50%;
     transform: translateY(-50%) rotate(720deg) scale(1);
 }
 
-#cotiza>div>button.is_active span {
+#cotiza-form>div>button.is_active span {
     opacity: 0;
     visibility: hidden;
 }
