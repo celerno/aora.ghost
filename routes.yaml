@@ -5,6 +5,9 @@ collections:
   /:
     permalink: /{slug}/
     template: index
+  /request-quote/:
+    permalink: /request-quote/
+    template: cotizar
   /cotizar/:
     permalink: /cotizar/
     template: cotizar
