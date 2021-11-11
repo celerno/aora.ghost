@@ -168,7 +168,6 @@ hr.separator-title {
     margin-bottom: 4rem;
     width: 24px;
     height: 0px;
-    border: 0.5px solid #1D1D1B;
 }
 
 .clientes-grid {
@@ -179,6 +178,10 @@ hr.separator-title {
 .clientes-grid>.clientes-row {
     display: flex;
     flex-direction: row;
+}
+
+.page-title {
+    font-size: calc(4rem);
 }
 
 
