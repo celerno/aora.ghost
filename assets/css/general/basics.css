@@ -235,6 +235,11 @@ br.break-md {
     display: none !important;
 }
 
+.dark-mode textarea {
+    background-color: var(--dark-mode-bg-color);
+    color: var(--dark-mode-primary-text-color);
+}
+
 @media (max-width: 767px) {
     .only-desktop {
         display: none !important;

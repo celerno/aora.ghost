@@ -113,6 +113,10 @@ a.lang {
     padding: 5px;
 }
 
+.dark-mode .logo-image {
+    fill: white;
+}
+
 .logo-image.white {
     position: absolute;
     top: 0;

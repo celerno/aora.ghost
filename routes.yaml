@@ -5,6 +5,10 @@ collections:
   /:
     permalink: /{slug}/
     template: index
+  /cotizar/:
+    permalink: /cotizar/
+    template: cotizar
+
 
 taxonomies:
   tag: /tag/{slug}/
