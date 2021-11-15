@@ -3,6 +3,12 @@ header a {
     font-size: unset;
 }
 
+@media (max-width:414px) {
+    header a {
+        font-size: 10pt;
+    }
+}
+
 .header-logo {
     padding: 0 .5rem;
 }
@@ -45,7 +51,6 @@ header a {
 }
 
 .site-header {
-    padding-top: 2rem;
     backface-visibility: hidden;
     z-index: 80;
 }

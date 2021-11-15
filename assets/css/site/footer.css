@@ -1,10 +1,10 @@
 .site-footer {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
     padding-bottom: 4rem;
     min-height: 120px;
     background-color: #EBEBEB;
@@ -12,27 +12,31 @@
     text-align: center;
     padding: 0 45px;
 }
-a{
+
+a {
     font-weight: 600;
 }
-.footer-start{
+
+.footer-start {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
-.footer-middle{
+
+.footer-middle {
     margin-bottom: 4rem;
 }
 
-.footer-end{
+.footer-end {
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
     padding-bottom: 6rem;
 }
-.separator{
+
+.separator {
     margin-left: 2rem;
     margin-right: 2rem;
     display: inline-block;
@@ -43,6 +47,7 @@ a{
 }
 
 .copyright {
+    margin-top: .5rem;
     line-height: 14px;
     letter-spacing: .05em;
     font-family: var(--font);
@@ -52,13 +57,13 @@ a{
 .copyright a {
     text-decoration: underline;
     text-decoration-thickness: 2px;
-
 }
-.mail-contact{
+
+.mail-contact {
     word-break: keep-all;
     font-family: var(--font);
-
 }
+
 .footer-social {
     margin-right: -7px;
     text-align: right;
@@ -71,13 +76,12 @@ a{
 }
 
 @media (max-width: 767px) {
-    .footer-end{
+    .footer-end {
         flex-direction: column;
     }
     .site-footer {
         flex-direction: column;
     }
-
     .footer-social {
         margin-top: 30px;
         margin-right: 0;
