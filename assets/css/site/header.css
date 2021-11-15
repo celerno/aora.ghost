@@ -9,9 +9,10 @@ header a {
 }
 
 .cotizar-btn {
+    text-align: center;
     background-color: var(--cotizar-color);
     border-radius: calc(7px);
-    padding: calc(7px);
+    padding: calc(.7rem);
 }
 
 .dark-mode .cotizar-btn {
@@ -206,6 +207,7 @@ a.lang {
         font-size: 10pt !important;
     }
     .cotizar-btn {
-        border-radius: calc(7px);
+        padding: calc(5px);
+        word-break: keep-all;
     }
 }
