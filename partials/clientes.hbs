@@ -1,3 +1,17 @@
+        {{#is "en"}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-en-md.svg">
+            <img loading="lazy" src="/assets/visuals/ourwork-en.svg">
+        </picture>
+        {{else}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-md.svg">
+            <img loading="lazy" src="/assets/visuals/ourwork.svg">
+        </picture>
+        {{/is}}
+        <br/>
+        <br/>
+        <br/>
 <div class="clientes-grid">
     <div class="clientes-row">
         <picture>
@@ -51,7 +65,7 @@
             <source media="(max-width: 767px)" srcset="/assets/visuals/Koulud{{#is 'en'}}-en{{/is}}-md.png" />
             <img loading="lazy" src="/assets/visuals/Koulud{{#is 'en'}}-en{{/is}}.png" />
         </picture>
-        <picture> 
+        <picture>
             <source media="(max-width: 767px)" srcset="/assets/visuals/cirb{{#is 'en'}}-en{{/is}}-md.png" />
             <img loading="lazy" src="/assets/visuals/cirb{{#is 'en'}}-en{{/is}}.png" />
         </picture>
