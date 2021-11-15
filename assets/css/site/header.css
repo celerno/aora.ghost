@@ -3,12 +3,6 @@ header a {
     font-size: unset;
 }
 
-@media (max-width:414px) {
-    header a {
-        font-size: 10pt;
-    }
-}
-
 .header-logo {
     padding: 0 .5rem;
     width: 33%;
@@ -16,8 +10,8 @@ header a {
 
 .cotizar-btn {
     background-color: var(--cotizar-color);
-    border-radius: calc(.5rem);
-    padding: calc(.7rem);
+    border-radius: calc(7px);
+    padding: calc(7px);
 }
 
 .dark-mode .cotizar-btn {
@@ -195,8 +189,23 @@ a.lang {
 }
 
 @media (max-width: 767px) {
+    .logo {
+        transform: scale(.7);
+    }
     .cotizar-btn>input {
         top: 30px;
         right: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    header a {
+        font-size: 8pt !important;
+    }
+    .cotizar-btn span {
+        font-size: 10pt !important;
+    }
+    .cotizar-btn {
+        border-radius: calc(7px);
     }
 }
