@@ -3,6 +3,7 @@
         <img src='/assets/visuals/slogan{{#is "request-quote"}}-en{{/is}}.svg'>
     </div>
     <div>
+        <h2>Déjanos tus datos.</h2>
         <form id="cotiza-form">
             <input type="hidden" name="fecha" value='{{date format="YYYY-MM-DD*hh:mm:ss"}}' />
             <div>
@@ -49,16 +50,15 @@
                 document.documentElement.classList.add('dark-mode');
     </script>
     <style>
+        nav{
+            display: none;
+        }
         footer {
             display: none !important;
         }
 
         .dark-mode .logo-image {
             opacity: 1 !important;
-        }
-
-        .dark-mode img.logo-image {
-            filter: invert(1);
         }
 
         .page-title {

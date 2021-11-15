@@ -4,11 +4,11 @@
     align-items: flex-start;
     font-size: calc(14pt);
     max-width: calc(1140px + 8vw);
-    width: 100%;
+    transform: translate(50%);
 }
 
 #cotizar-section>div {
-    min-width: calc(30%);
+    flex-basis: 50%;
 }
 
 #cotizar-section>div:first-child {
