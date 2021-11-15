@@ -69,6 +69,10 @@ header a {
     filter: invert(1);
 }
 
+.dark-mode .lang-switch {
+    display: none;
+}
+
 .header-fixed {
     position: fixed;
 }
