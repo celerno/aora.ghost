@@ -85,7 +85,7 @@ header a {
     position: fixed;
 }
 
-@media (max-width:414px) {
+@media (max-width:767px) {
     .header-fixed {
         position: unset;
     }

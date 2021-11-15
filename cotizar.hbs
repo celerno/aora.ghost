@@ -20,6 +20,10 @@
                 <input name="empresa" type="text" placeholder={{#is "cotizar" }}"EMPRESA"{{else}}"COMPANY"{{/is}} />
             </div>
             <div>
+                <br>
+                <span style="color: white;">Me interesan los servicios de:</span>
+            </div>
+            <div>
                 <input type="checkbox" /><label>{{#is "en"}}Branding{{else}}Branding{{/is}}</label>
             </div>
             <div>
@@ -56,11 +60,6 @@
         footer {
             display: none !important;
         }
-
-        .dark-mode .logo-image {
-            opacity: 1 !important;
-        }
-
         .page-title {
             display: none;
         }
