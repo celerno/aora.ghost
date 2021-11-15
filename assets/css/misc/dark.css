@@ -25,7 +25,7 @@
 }
 
 .dark-mode .logo-image:not(.white) {
-    opacity: 0;
+    /* opacity: 0;*/
 }
 
 .dark-mode .burger::before,
@@ -37,7 +37,7 @@
 }
 
 .dark-mode .logo-image.white {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 
 .dark-mode .menu-item-link,
@@ -60,7 +60,7 @@
 .dark-mode .comment-container,
 .dark-mode .u-placeholder,
 .dark-mode pre,
-.dark-mode :not(pre) > code {
+.dark-mode :not(pre)>code {
     background-color: var(--dark-mode-darker-bg-color);
 }
 
