@@ -2,10 +2,13 @@
     {{#post}}
     {{#if feature_image}}
         {{>post-media}}
+        {{>separator-title}}
     {{else}}
         {{#if title}}
-            <div class="page-title">{{title}}</div>
-            {{>separator-title}}
+            <div class="page-title">{{title}}
+                {{>separator-title}}
+            </div>
+
         {{/if}}
     {{/if}}
 
