@@ -190,8 +190,8 @@ hr.separator-title {
 
 .whatsapp {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     bottom: 40px;
     left: 10px;
     bottom: 10px;
@@ -211,7 +211,8 @@ hr.separator-title {
 }
 
 .my-wassap {
-    margin-top: 16px;
+    margin-top: 21px;
+    transform: scale(1.5);
 }
 
 
