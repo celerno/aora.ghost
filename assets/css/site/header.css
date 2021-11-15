@@ -50,12 +50,13 @@ header a {
     z-index: 80;
 }
 
+.header-container {
+    background: var(--white-color);
+    width: 100%;
+}
+
 .header-fixed {
     position: fixed;
-    padding: 0 2rem !important;
-    background: var(--white-color-alpha);
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .navbar {

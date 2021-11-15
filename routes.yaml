@@ -1,18 +1,12 @@
 ## copiar este archivo a ../../settings/
 routes:
+  /request-quote/: cotizar
+  /cotizar/: cotizar
   /en/: home
 collections:
   /:
     permalink: /{slug}/
-    template: index
-  /request-quote/:
-    permalink: /request-quote/
-    template: cotizar
-  /cotizar/:
-    permalink: /cotizar/
-    template: cotizar
-
-
+    template: home
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/

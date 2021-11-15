@@ -180,6 +180,10 @@ hr.separator-title {
     flex-direction: row;
 }
 
+.clientes-grid>.clientes-row img {
+    margin: 2px;
+}
+
 .page-title {
     font-size: calc(4rem);
 }

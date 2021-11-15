@@ -168,7 +168,7 @@ function dimmer(action, speed) {
 
 function applyOnScroll() {
     $(window).on('scroll', function(evt) {
-        var header = $('.site-header');
+        var header = $('.header-container');
 
         if ($(window).scrollTop() === 0) {
             $(header).removeClass('header-fixed');

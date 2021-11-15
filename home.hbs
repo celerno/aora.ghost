@@ -1,90 +1,97 @@
+
 {{!< default}} <section id="home">
-    {{#is "en"}}
-    <picture>
-        <source media="(min-width: 767px)" srcset="/assets/visuals/creamos-en.svg">
-        <source media="(max-width: 767px)" srcset="/assets/visuals/creamos-en-md.svg">
-        <img loading="lazy" src="/assets/visuals/creamos-en.svg">
-    </picture>
+    {{^if post}}
+        {{^is "en"}}
+    {{#get "pages" filter="slug:agencia"}}
+    {{#foreach pages}}
+    {{#page}}
+    <div id="slogan">
+        <a href="/">{{#if feature_image}}
+            {{>post-media}}
+            {{else}}
+            {{content}}{{/if}}</a>
+    </div>
+    {{/page}}
+    {{/foreach}}
+    {{/get}}
     {{else}}
-    <picture>
-        <source media="(min-width: 767px)" srcset="/assets/visuals/creamos.svg">
-        <source media="(max-width: 767px)" srcset="/assets/visuals/creamos-md.svg">
-        <img loading="lazy" src="/assets/visuals/creamos.svg">
-    </picture>
+     {{#get "pages" filter="slug:agencia-en"}}
+    {{#foreach pages}}
+    {{#page}}
+    <div id="slogan">
+        <a href="/">{{#if feature_image}}
+            {{>post-media}}
+            {{else}}
+            {{content}}{{/if}}</a>
+    </div>
+    {{/page}}
+    {{/foreach}}
+    {{/get}}
     {{/is}}
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    {{> contact}}
+    {{else}}
+    {{{block "slogan"}}}
+    {{/if}}
     </section>
-    <section id="philosophy">
+
+    <section id="somos">{{>somos}}</section>
+    <section id="clientes" class="clientes">
+        {{#is "en"}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-en-md.svg">
+            <img loading="lazy" src="/assets/visuals/ourwork-en.svg">
+        </picture>
+        {{else}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-md.svg">
+            <img loading="lazy" src="/assets/visuals/ourwork.svg">
+        </picture>
+        {{/is}}
+        {{>separator-title}}
+
+        {{>clientes}}
 
     </section>
-    <section id="work">
-       {{>somos}}
-        <div class="clientes">
-            {{#is "en"}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-en-md.svg">
-                <img loading="lazy" src="/assets/visuals/ourwork-en.svg">
-            </picture>
-            {{else}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/ourwork-md.svg">
-                <img loading="lazy" src="/assets/visuals/ourwork.svg">
-            </picture>
-            {{/is}}
-                        {{>separator-title}}
+    <section id="servicios" class="servicios">
+        {{#is "en"}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-en-md.svg">
+            <img loading="lazy" src="/assets/visuals/work-servicios-en.svg">
+        </picture>
 
-            {{>clientes}}
-        </div>
+        {{else}}
+        <picture>
+            <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-md.svg">
+            <img loading="lazy" src="/assets/visuals/work-servicios.svg">
+        </picture>
+        {{/is}}
+        <div class="table flex-column-md">
+            <div class="column ">
+                <span class="header">{{#is "en"}}Branding{{else}}Branding{{/is}}</span>
+                <span class="field">{{#is "en"}}Naming{{else}}Creación de Nombre{{/is}}</span>
+                <span class="field">{{#is "en"}}Logotype Design{{else}}Diseño de Logotipo{{/is}}</span>
+                <span class="field">{{#is "en"}}Visual Identity{{else}}Identidad Visual{{/is}}</span>
+                <span class="field">{{#is "en"}}Brand applications{{else}}Aplicaciones de Marca{{/is}}</span>
+            </div>
+            <div class="column ">
+                <span class="header">{{#is "en"}}Marketing{{else}}Digital{{/is}}</span>
+                <span class="field">{{#is "en"}}Web Design{{else}}Paginas web{{/is}}</span>
+                <span class="field">{{#is "en"}}Social Media{{else}}Redes Sociales{{/is}}</span>
+                <span class="field">{{#is "en"}}Google Ads{{else}}Google Ads{{/is}}</span>
+            </div>
+            <div class="column ">
+                <span class="header">{{#is "en"}}Marketing{{else}}Marketing{{/is}}</span>
+                <span class="field">{{#is "en"}}Communication Strategies{{else}}Estrategias de
+                    Comunicación{{/is}}</span>
+                <span class="field">{{#is "en"}}Advertising Campaigns{{else}}Campañas de Publicidad{{/is}}</span>
+            </div>
 
-        <div class="servicios">
-            {{#is "en"}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-en-md.svg">
-                <img loading="lazy" src="/assets/visuals/work-servicios-en.svg">
-            </picture>
+            <div class="column ">
+                <span class="header">{{#is "en"}}Editorial{{else}}Editorial{{/is}}</span>
+                <span class="field">{{#is "en"}}Brochures{{else}}Brochures{{/is}}</span>
+                <span class="field">{{#is "en"}}Posters{{else}}Posters{{/is}}</span>
+                <span class="field">{{#is "en"}}Magazines{{else}}Revistas{{/is}}</span>
+                <span class="field">{{#is "en"}}Books{{else}}Libros{{/is}}</span>
 
-            {{else}}
-            <picture>
-                <source media="(max-width: 767px)" srcset="/assets/visuals/work-servicios-md.svg">
-                <img loading="lazy" src="/assets/visuals/work-servicios.svg">
-            </picture>
-            {{/is}}
-            <div class="table flex-column-md">
-                <div class="column ">
-                    <span class="header">{{#is "en"}}Branding{{else}}Branding{{/is}}</span>
-                    <span class="field">{{#is "en"}}Naming{{else}}Creación de Nombre{{/is}}</span>
-                    <span class="field">{{#is "en"}}Logotype Design{{else}}Diseño de Logotipo{{/is}}</span>
-                    <span class="field">{{#is "en"}}Visual Identity{{else}}Identidad Visual{{/is}}</span>
-                    <span class="field">{{#is "en"}}Brand applications{{else}}Aplicaciones de Marca{{/is}}</span>
-                </div>
-                <div class="column ">
-                    <span class="header">{{#is "en"}}Marketing{{else}}Digital{{/is}}</span>
-                    <span class="field">{{#is "en"}}Web Design{{else}}Paginas web{{/is}}</span>
-                    <span class="field">{{#is "en"}}Social Media{{else}}Redes Sociales{{/is}}</span>
-                    <span class="field">{{#is "en"}}Google Ads{{else}}Google Ads{{/is}}</span>
-                </div>
-                <div class="column ">
-                    <span class="header">{{#is "en"}}Marketing{{else}}Marketing{{/is}}</span>
-                    <span class="field">{{#is "en"}}Communication Strategies{{else}}Estrategias de
-                        Comunicación{{/is}}</span>
-                    <span class="field">{{#is "en"}}Advertising Campaigns{{else}}Campañas de Publicidad{{/is}}</span>
-                </div>
-
-                <div class="column ">
-                    <span class="header">{{#is "en"}}Editorial{{else}}Editorial{{/is}}</span>
-                    <span class="field">{{#is "en"}}Brochures{{else}}Brochures{{/is}}</span>
-                    <span class="field">{{#is "en"}}Posters{{else}}Posters{{/is}}</span>
-                    <span class="field">{{#is "en"}}Magazines{{else}}Revistas{{/is}}</span>
-                    <span class="field">{{#is "en"}}Books{{else}}Libros{{/is}}</span>
-
-                </div>
             </div>
         </div>
     </section>

@@ -1,15 +1,20 @@
-section{
+section {
     align-content: stretch;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    padding-bottom: 2rem;
 }
-#home > img{
+
+#home>img {
     margin-bottom: 4rem;
 }
-.servicios, .somos, .clientes{
+
+.servicios,
+.somos,
+.clientes {
     padding-top: 4rem;
     width: 100%;
     align-content: stretch;
@@ -17,16 +22,20 @@ section{
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;    
+    align-items: center;
 }
-#home,.servicios{
-    padding-bottom: 6rem;
 
+#home,
+.servicios {
+    padding-bottom: 6rem;
 }
-.servicios, .somos{
+
+.servicios,
+.somos {
     background-color: black;
 }
-.somos-footer{
+
+.somos-footer {
     background-color: #EBEBEB;
     width: 100%;
     display: flex;
@@ -35,6 +44,7 @@ section{
     justify-content: center;
     margin-top: 4rem;
 }
+
 #home p {
     font-family: var(--font);
     font-style: normal;
@@ -42,12 +52,14 @@ section{
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    padding: 2rem 4rem; 
+    padding: 2rem 4rem;
 }
-section > div > picture{
+
+section>div>picture {
     margin-bottom: 2rem;
 }
-.table{
+
+.table {
     color: var(--white-color);
     text-align: left;
     display: flex;
@@ -56,18 +68,22 @@ section > div > picture{
     font-weight: 300;
     line-height: 22px;
 }
-.table > span{
+
+.table>span {
     display: block;
 }
-.table > .column {
+
+.table>.column {
     display: flex;
     flex-direction: column;
     margin-right: 15px;
 }
-.table > .column:last-child{
+
+.table>.column:last-child {
     margin-right: unset;
 }
-.table > .column > .header{
+
+.table>.column>.header {
     color: var(--white-color);
     font-family: Butler;
     border-bottom: 1px solid #cdcdcd;
@@ -75,28 +91,30 @@ section > div > picture{
     margin-top: 15px;
     padding-bottom: 3px;
 }
-.field:first-child{
+
+.field:first-child {
     margin-bottom: 10px;
 }
-.table > .column > .field {
+
+.table>.column>.field {
     color: var(--secondary-text-color);
     margin-right: 2em;
     min-width: 180px;
 }
 
-.field:last-child{
+.field:last-child {
     margin: 0;
     min-width: unset;
 }
-@media (max-width:736px) {
-    .table .column >.header{
-        display: inline-block;
-   }
-    section{
-        align-content: center;
-    }
-    .servicios{
-        align-content: center;
-    }
 
+@media (max-width:736px) {
+    .table .column>.header {
+        display: inline-block;
+    }
+    section {
+        align-content: center;
+    }
+    .servicios {
+        align-content: center;
+    }
 }
