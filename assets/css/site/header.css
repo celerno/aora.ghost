@@ -20,6 +20,14 @@ header a {
     padding: calc(.7rem);
 }
 
+.dark-mode .cotizar-btn {
+    display: none;
+}
+
+.dark-mode nav {
+    display: none;
+}
+
 .cotizar-btn:hover {
     text-decoration: underline solid white 1px !important;
 }
