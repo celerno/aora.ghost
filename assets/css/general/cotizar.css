@@ -11,11 +11,14 @@
     flex-basis: 50%;
 }
 
-#cotizar-section>div:first-child {
-    padding-right: 4rem;
+#cotizar-section>div:first-child img {
+    padding-left: 40%;
 }
 
 @media (max-width: 767px) {
+    #cotizar-section>div:first-child img {
+        padding-left: unset;
+    }
     #cotizar-section>div {
         flex-basis: unset;
         margin-bottom: 2rem;
