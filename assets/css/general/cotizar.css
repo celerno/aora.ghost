@@ -16,9 +16,14 @@
 }
 
 @media (max-width: 767px) {
+    #cotizar-section>div {
+        flex-basis: unset;
+        margin-bottom: 2rem;
+    }
     #cotizar-section {
         flex-direction: column;
         align-items: center;
+        transform: unset;
     }
 }
 
