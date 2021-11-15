@@ -5,13 +5,13 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    padding-bottom: 2rem;
 }
 
 #home>img {
     margin-bottom: 4rem;
 }
 
+#home,
 .servicios,
 .somos,
 .clientes {
@@ -23,11 +23,7 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-}
-
-#home,
-.servicios {
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .servicios,
