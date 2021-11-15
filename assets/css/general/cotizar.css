@@ -3,7 +3,8 @@
     flex-direction: row;
     align-items: flex-start;
     font-size: calc(14pt);
-    max-width: calc(1140px + 8vw);
+    max-width: calc(1140px);
+    width: 100%;
 }
 
 #cotizar-section>div {

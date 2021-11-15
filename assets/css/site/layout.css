@@ -8,7 +8,13 @@
 .site-content {
     flex-grow: 1;
     padding-top: 60px;
+}
+
+.dark-mode .site-content {
+    flex-grow: 1;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
