@@ -11,6 +11,7 @@ header a {
 
 .header-logo {
     padding: 0 .5rem;
+    width: 33%;
 }
 
 .cotizar-btn {
@@ -81,11 +82,6 @@ a.lang {
     font-weight: 600 !important;
 }
 
-.navbar-left,
-.navbar-right {
-    align-items: flex-end;
-}
-
 .navbar-middle {
     align-items: center;
 }
@@ -98,11 +94,12 @@ a.lang {
     font-size: smaller;
     justify-content: space-around;
     align-items: center;
-    /*flex-basis: 100%;*/
+    flex-basis: 100%;
 }
 
-.navbar-left {
-    height: 100%;
+.navbar-left,
+.navbar-right {
+    justify-content: flex-end;
 }
 
 .logo {
