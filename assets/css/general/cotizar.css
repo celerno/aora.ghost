@@ -4,7 +4,6 @@
     align-items: flex-start;
     font-size: calc(14pt);
     max-width: calc(1140px + 8vw);
-    transform: translate(50%);
 }
 
 #cotizar-section>div {
