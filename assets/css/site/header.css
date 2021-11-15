@@ -85,11 +85,7 @@ header a {
     position: fixed;
 }
 
-@media (max-width:767px) {
-    .header-fixed {
-        position: unset;
-    }
-}
+@media (max-width:767px) {}
 
 .navbar {
     display: flex;
