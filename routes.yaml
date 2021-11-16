@@ -2,11 +2,13 @@
 routes:
   /request-quote/: cotizar
   /cotizar/: cotizar
-  /en/: index
-collections:
-  /:
-    permalink: /{slug}/
+  /en/:
+    data: page.agencia-en
     template: index
+  /:
+    data: page.agencia
+    template: index
+collections:
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
