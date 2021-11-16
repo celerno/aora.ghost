@@ -2,11 +2,11 @@
 routes:
   /request-quote/: cotizar
   /cotizar/: cotizar
-  /en/: index
+  /en/: home
 collections:
   /:
     permalink: /{slug}/
-    template: index
+    template: home
 taxonomies:
   tag: /tag/{slug}/
   author: /author/{slug}/
