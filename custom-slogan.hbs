@@ -1,1 +1,11 @@
 {{!< index}}
+{{#contentFor "slogan"}}
+        <div id="slogan">
+        {{#post}}
+            <a href="{{slug}}">{{#if feature_image}}
+                    {{>post-media}}
+                {{else}}
+                    {{content}}{{/if}}</a>
+        {{/post}}
+        </div>
+{{/contentFor}}
