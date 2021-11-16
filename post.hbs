@@ -1,35 +1,20 @@
 {{!< default}} <section id="home">
-    {{^if post}}
-        {{^is "en"}}
-    {{#get "pages" filter="slug:agencia"}}
-    {{#foreach pages}}
-    {{#page}}
-    <div id="slogan">
-        <a href="/">{{#if feature_image}}
-            {{>post-media}}
+
+
+        <div id="slogan">
+            {{#page}}
+        <a href="{{slug}}">{{#if feature_image}}
+                {{>post-media}}
             {{else}}
-            {{content}}{{/if}}</a>
-    </div>
-    {{/page}}
-    {{/foreach}}
-    {{/get}}
-    {{else}}
-     {{#get "pages" filter="slug:agencia-en"}}
-    {{#foreach pages}}
-    {{#page}}
-    <div id="slogan">
-        <a href="/">{{#if feature_image}}
-            {{>post-media}}
-            {{else}}
-            {{content}}{{/if}}</a>
-    </div>
-    {{/page}}
-    {{/foreach}}
-    {{/get}}
-    {{/is}}
-    {{else}}
-    {{{block "slogan"}}}
-    {{/if}}
+                {{content}}{{/if}}</a>
+                    {{/page}}
+            {{#post}}
+                <a href="{{slug}}">{{#if feature_image}}
+                        {{>post-media}}
+                    {{else}}
+                        {{content}}{{/if}}</a>
+            {{/post}}
+        </div>
     {{> contact}}
     </section>
 
