@@ -29,7 +29,11 @@
     {{/get}}
     {{/is}}
     {{else}}
-    {{{block "slogan"}}}
+    {{#page}}
+    <div id="slogan">
+            {{content}}
+    </div>
+    {{/page}}
     {{/is}}
     {{> contact}}
     </section>
