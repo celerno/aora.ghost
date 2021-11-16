@@ -1,6 +1,6 @@
 
 {{!< default}} <section id="home">
-    {{^if post}}
+    {{#is "home"}}
         {{^is "en"}}
     {{#get "pages" filter="slug:agencia"}}
     {{#foreach pages}}
@@ -30,7 +30,7 @@
     {{/is}}
     {{else}}
     {{{block "slogan"}}}
-    {{/if}}
+    {{/is}}
     {{> contact}}
     </section>
 
