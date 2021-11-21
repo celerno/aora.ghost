@@ -1,8 +1,3 @@
-header a {
-    font: unset;
-    font-size: unset;
-}
-
 .header-logo {
     padding: 0 .5rem;
     width: 33%;
@@ -41,7 +36,6 @@ header a {
 }
 
 .lang-switch {
-    font-size: calc(1rem);
     margin: 0 .5rem;
 }
 
@@ -80,8 +74,6 @@ header a {
     position: fixed;
 }
 
-@media (max-width:767px) {}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -108,7 +100,6 @@ a.lang {
 .navbar-right {
     display: flex;
     flex-direction: row;
-    font-size: smaller;
     justify-content: space-around;
     align-items: center;
     flex-basis: 100%;
@@ -190,6 +181,9 @@ a.lang {
 }
 
 @media (max-width: 767px) {
+    .container {
+        padding: 0;
+    }
     .logo {
         transform: scale(.7);
     }
@@ -209,5 +203,10 @@ a.lang {
     .cotizar-btn {
         padding: calc(5px);
         word-break: keep-all;
+    }
+    .header-logo {
+        padding: 0;
+        width: 50%;
+        justify-content: unset;
     }
 }

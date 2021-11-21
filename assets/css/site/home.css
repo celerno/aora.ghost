@@ -51,6 +51,17 @@ section {
     padding: 2rem 4rem;
 }
 
+#slogan {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 767px) {
+    #slogan {
+        max-width: 90vw;
+        margin-bottom: 4rem;
+    }
+}
+
 section>div>picture {
     margin-bottom: 2rem;
 }

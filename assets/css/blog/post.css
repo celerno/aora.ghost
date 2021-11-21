@@ -1,4 +1,4 @@
-.post {
+/*.post {
     margin-bottom: 75px;
 }
 
@@ -26,6 +26,7 @@
 .post-header {
     margin-bottom: 20px;
 }
+*/
 
 .post-title {
     margin-bottom: 10px;
@@ -50,7 +51,7 @@
     text-transform: uppercase;
 }
 
-.post-meta-item + .post-meta-item::before {
+.post-meta-item+.post-meta-item::before {
     content: "\02022";
     padding: 0 4px;
     font-family: serif;
@@ -60,7 +61,7 @@
     color: var(--primary-color);
 }
 
-.post-tag + .post-tag::before {
+.post-tag+.post-tag::before {
     content: ", ";
 }
 
@@ -161,7 +162,7 @@
     font-weight: 700;
 }
 
-.post-author-name-link + .post-author-name-link::before {
+.post-author-name-link+.post-author-name-link::before {
     content: ", ";
     color: var(--secondary-text-color);
 }
@@ -170,7 +171,6 @@
     .post-media.large {
         margin-bottom: 30px;
     }
-
     .post:not(.single-post) .post-title {
         font-size: 20px !important;
     }

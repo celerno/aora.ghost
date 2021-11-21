@@ -28,10 +28,6 @@
     color: var(--light-gray-color);
 }
 
-#cotiza-form>div>input[name="intereses"]::placeholder {
-    color: var(--white-color);
-}
-
 #cotiza-form>div>input[type='checkbox'] {
     margin-right: 4px;
     filter: invert(60%);
