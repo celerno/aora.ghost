@@ -18,6 +18,12 @@
         "ghost-theme"
     ],
     "config": {
+        "custom": {
+            "Form_Post_URL": {
+                "type": "text",
+                "default": "https://script.google.com/macros/s/AKfycbx9SzVs8TlqIWwjY8xtiVUGmQ-Ksb4nw4IJUAgZfzTS5Gp4UjzKGet941Kc3XcUumn1ag/exec"
+            }
+        },
         "posts_per_page": 5,
         "image_sizes": {
             "xs": {

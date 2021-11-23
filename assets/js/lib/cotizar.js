@@ -1,5 +1,12 @@
 let entrada = function(e) {
     e.preventDefault();
+    var intereses = e.target.elements['intereses'];
+    if (intereses !== undefined) {
+        intereses.value += ' | ';
+        this.querySelectorAll('[type="checkbox"]:checked').forEach(chk => {
+            intereses.value += chk.value + ' | ';
+        });
+    }
     let datos = $(e.target).serializeObject();
     $.ajax({
         url: url,
@@ -11,7 +18,8 @@ let entrada = function(e) {
                 let btn = document.querySelector("#cotiza-form > div > button");
                 btn.classList.toggle("is_active");
             } catch (error) {
-
+                console.log(error);
+                window.location.href = 'mailto:hello@aora.agency';
             }
 
             if (window.location.href.includes('request-quote') || window.location.href.includes('/en')) {
@@ -24,13 +32,4 @@ let entrada = function(e) {
     });
 }
 
-let formCotiza = $('#cotiza-form'),
-    url = 'https://script.google.com/macros/s/AKfycbx9SzVs8TlqIWwjY8xtiVUGmQ-Ksb4nw4IJUAgZfzTS5Gp4UjzKGet941Kc3XcUumn1ag/exec'
-let formContact = $('#contact-form');
-if (formContact !== undefined) {
-
-    $(formContact).on('submit', entrada);
-}
-if (formCotiza !== undefined) {
-    $(formCotiza).on('submit', entrada);
-}
+$('form').on('submit', entrada);

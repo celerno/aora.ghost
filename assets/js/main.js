@@ -8,21 +8,8 @@ $(function() {
     gallery();
     author();
     offCanvas();
-    contactForm();
     applyOnScroll();
 });
-
-function contactForm() {
-    $('#contactForm').on('submit', function(event) {
-        let msg = document.getElementById('contact-message');
-        let phone = document.getElementById('contact-tel');
-        let name = document.getElementById('contact-name');
-        let mail = document.getElementById('contact-mail');
-
-        contactForm.elements['message'].value = name.value + " / " + phone.value + " / " + mail.value;
-        contactForm.submit();
-    });
-}
 
 function darkMode() {
     $('.toggle-track').on('click', function() {
